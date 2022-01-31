@@ -1,8 +1,11 @@
 import Layout from "../components/layout/layout";
 import CustomHead from "../components/layout/head";
+import HomeImage from "../components/home/HomeImage"
 export default function Home() {
   return (
-    "home page"
+    <div>
+      <HomeImage />
+    </div>
   );
 }
 
