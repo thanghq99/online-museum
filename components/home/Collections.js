@@ -32,7 +32,7 @@ const collections = [
 
 const Collections = () => {
   return (
-      <div className="bg-black border-green-700">
+      <div className="bg-black pb-12">
           <div className="container mx-auto">
             <SectionHeader sectionTitle="Bộ sưu tập mẫu vật" linkTitle="Xem toàn bộ sưu tập mẫu vật" linkUrl="/bo-suu-tap"/>
             <div className="grid gap-10 grid-cols-5">

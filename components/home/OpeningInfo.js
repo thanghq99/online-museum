@@ -13,8 +13,8 @@ const OpeningInfo = () => {
                 <br></br>
                 trực tiếp tại bảo tàng
             </div>
-            <div className="py-10 flex flex-col w-1/3 text-xl">
-                <div className="mb-2"><FontAwesomeIcon icon={faTicketAlt} fixedWidth className="mr-2"></FontAwesomeIcon>Miễn phí - <HighlightLink title="Đặt vé" url="/dat-ve" /></div>
+            <div className="py-12 flex flex-col w-1/3 text-xl">
+                <div className="mb-2"><FontAwesomeIcon icon={faTicketAlt} fixedWidth className="mr-2"></FontAwesomeIcon>Miễn phí - <HighlightLink title="Đặt lịch" url="/dat-ve" /></div>
                 <div className="mb-2"><FontAwesomeIcon icon={faCalendarAlt} fixedWidth className="mr-2"></FontAwesomeIcon>Mở cửa từ Thứ 3 - CN</div>
                 <div className="mb-2"><FontAwesomeIcon icon={faClock} fixedWidth className="mr-2"></FontAwesomeIcon>Sáng: 8h30 - 11h30; Chiều: 13h30 - 16h30</div>
             </div>

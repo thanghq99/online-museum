@@ -30,7 +30,7 @@ const news = [
 
 const News = () => {
   return (
-      <div className="bg-black">
+      <div className="bg-black pb-12">
           <div className="container mx-auto">
             <SectionHeader sectionTitle="Tin tức" linkTitle="Xem toàn bộ tin tức" linkUrl="/tin-tuc"/>
             <div className="grid gap-16 grid-cols-4">

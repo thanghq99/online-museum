@@ -13,7 +13,7 @@ const Navbar = () => {
             <a href="/">Bảo tàng</a>
           </div>
           <div className="flex">
-            <Button>Mua vé</Button>
+            <Button>Đặt lịch</Button>
             <Button>Đăng nhập</Button>
           </div>
         </div>
