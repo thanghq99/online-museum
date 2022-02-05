@@ -1,8 +1,11 @@
 import { useState } from 'react';
-import { AppShell, Burger, Group, Header, MediaQuery, Navbar, Text, Title, Avatar, useMantineTheme } from '@mantine/core';
+import { AppShell, Burger, Group, Header, MediaQuery, Navbar, Text, Title, Avatar, useMantineTheme, ActionIcon, Button } from '@mantine/core';
 import { MantineProvider, ColorSchemeProvider } from '@mantine/core';
 import { useHotkeys, useLocalStorageValue } from '@mantine/hooks';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 import DarkModeButton from "../../customComponents/DarkModeButton"
+import Link from 'next/link';
 
 const Layout = ({ children }) => {
     const [opened, setOpened] = useState(false);
@@ -63,11 +66,35 @@ const Layout = ({ children }) => {
                   </MediaQuery>
       
                   <Group position="apart" style={{width: '100%'}}>
-                    <Title order={1}>Bảo tàng</Title>
+                    <Group>
+                      <Link href="/management">
+                        <Title component="a" variant="h2" order={1} sx={{'&:hover': {cursor: 'pointer'}}}>Bảo tàng</Title>
+                      </Link>
+                      <Link href="/management/samples">
+                        <Button component="a" variant="subtle">
+                          Mẫu vật
+                        </Button>
+                      </Link>
+                      <Link href="/management/staffs">
+                        <Button component="a" variant="subtle">
+                          Nhân viên
+                        </Button>
+                      </Link>
+                      <Link href="/management/statics-and-reports">
+                        <Button component="a" variant="subtle">
+                          Thống kê & báo cáo
+                        </Button>
+                      </Link>
+                    </Group>
                     <Group>
                       <Avatar radius="xl" src="avatar.png" alt="it's me" />
                       <Text>Hà Quốc Thắng</Text>
                       <DarkModeButton />
+                      <Link href="/">
+                        <ActionIcon variant='outline'>
+                          <FontAwesomeIcon icon={faSignOutAlt} />
+                        </ActionIcon>
+                      </Link>
                     </Group>
                   </Group>
                 </div>

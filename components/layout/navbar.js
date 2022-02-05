@@ -1,5 +1,6 @@
 import NavItem from "../navigation/navItem";
 import Button from "../customComponents/Button";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -14,7 +15,9 @@ const Navbar = () => {
           </div>
           <div className="flex">
             <Button>Đặt lịch</Button>
-            <Button>Đăng nhập</Button>
+            <Link href="/management">
+              <Button>Đăng nhập</Button>
+            </Link>
           </div>
         </div>
         <ul className="flex justify-center">
